@@ -1,0 +1,10 @@
+.navbar {
+  width: 100vw;
+  height: 5.15rem;
+  padding: 0.2rem 0 0 9.6rem;
+  position: absolute;
+  z-index: 99;
+}
+.navbar .netflix-logo {
+  height: 100%;
+}
