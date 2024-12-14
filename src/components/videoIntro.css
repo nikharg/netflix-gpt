@@ -1,0 +1,45 @@
+.videoInfo {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25vw;
+  padding-left: 3vw;
+  padding-bottom: 10vh;
+  gap: 1rem;
+  top: 0;
+  height: 100vh;
+  /* border: 1px solid red; */
+  color: #fff;
+  background-color: transparent;
+  background-image: linear-gradient(to right, black, transparent);
+}
+.videoInfo h1 {
+  font-size: 2.5rem;
+}
+.videoInfo .btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.videoInfo .btns button {
+  width: 48%;
+  height: 2.5rem;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 550;
+  background-color: rgba(128, 128, 128, 0.6);
+}
+.videoPlayer {
+  height: 100vh;
+  overflow: hidden;
+}
+.videoPlayer iframe {
+  position: relative;
+  top: -16%;
+  left: -9%;
+  width: 120%;
+  height: 120%;
+  pointer-events: none;
+}

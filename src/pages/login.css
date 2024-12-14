@@ -5,6 +5,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
 }
 .login .login-bg {
   background-color: rgba(0, 0, 0, 0.5);

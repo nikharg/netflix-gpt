@@ -1,5 +1,5 @@
 .navbar {
-  width: 100vw;
+  width: 100%;
   height: 5.15rem;
   padding: 0rem 9.6rem;
   position: absolute;
@@ -7,10 +7,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* border: 1px solid red; */
 }
 .navbar .netflix-logo {
   height: 100%;
-  /* border: 1px solid red; */
 }
 .navbar #right {
   display: flex;
@@ -19,10 +19,10 @@
   gap: 1rem;
 }
 .navbar #right #profile {
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   /* border: 1px solid red; */
-  border-radius: 50%;
+  /* border-radius: 50%; */
   overflow: hidden;
   cursor: pointer;
 }
