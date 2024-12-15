@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addUser, removeUser } from "../utils/userSlice";
 import { LOGO } from "../utils/constants";
+import { toggleGptState } from "../utils/gptSlice";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -38,6 +39,10 @@ const Header = () => {
         navigate("/error");
       });
   };
+  const handleGptSearch = () => {
+    dispatch(toggleGptState());
+  };
+
   return (
     <nav className="navbar" style={user && { padding: "0rem 5rem" }}>
       <img
@@ -48,6 +53,9 @@ const Header = () => {
       />
       {user && (
         <section id="right">
+          <button onClick={handleGptSearch}>
+            <p>GPT Search</p>
+          </button>
           <div id="profile">
             <img src={user?.photoURL} alt="profile-photo" />
           </div>
